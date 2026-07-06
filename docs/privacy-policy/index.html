@@ -12,7 +12,7 @@
     <header>
       <h1>Privacy Policy — Convertica</h1>
       <div class="meta">
-        <p><strong>Last updated:</strong> June 24, 2026</p>
+        <p><strong>Last updated:</strong> July 6, 2026</p>
         <p><strong>App name:</strong> Convertica</p>
         <p><strong>Developer:</strong> SSForge</p>
         <p><strong>Contact:</strong> <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
@@ -39,6 +39,16 @@
           </thead>
           <tbody>
             <tr>
+              <td><strong>Usage analytics</strong></td>
+              <td>Feature usage events (e.g., app opened, conversion completed, scan completed)</td>
+              <td>Google Firebase Analytics (see below)</td>
+            </tr>
+            <tr>
+              <td><strong>Diagnostic data</strong></td>
+              <td>Crash logs, stack traces, device and app version</td>
+              <td>Google Firebase Crashlytics (see below)</td>
+            </tr>
+            <tr>
               <td><strong>Advertising data</strong></td>
               <td>Ad impressions, ad identifiers</td>
               <td>Google AdMob (see below)</td>
@@ -62,7 +72,7 @@
         </table>
       </div>
       <p>We do <strong>not</strong> knowingly collect names, email addresses, phone numbers, or payment information through Convertica unless you contact us directly by email.</p>
-      <p>SSForge does <strong>not</strong> use in-app analytics or crash-reporting services that send usage or diagnostic data to our servers or to Google Firebase in the current version of Convertica.</p>
+      <p>Convertica uses <strong>Google Firebase</strong> for usage analytics and crash reporting. These services help us understand how features are used and improve stability. They do <strong>not</strong> receive your document content, OCR text, file names, free-form input, or conversion amounts (see the Firebase sections below).</p>
 
       <h2>Camera Permission</h2>
       <p>Convertica requests access to your device <strong>camera</strong> only when you choose a scan-related feature, such as:</p>
@@ -89,8 +99,71 @@
       <p><strong>SSForge does not receive, store, or access your documents, photos, or extracted text on our own servers.</strong></p>
       <p>You are responsible for exported files saved on your device and for any content you share with third parties.</p>
 
+      <h2>Firebase Analytics</h2>
+      <p>Convertica uses <strong>Firebase Analytics</strong> to understand how the app is used and to improve performance and features.</p>
+      <p><strong>Purpose:</strong></p>
+      <ul>
+        <li>Analyze app usage patterns</li>
+        <li>Understand which features are used</li>
+        <li>Improve app performance and user experience</li>
+      </ul>
+      <p><strong>Examples of event types we may collect</strong> (not the content of your actions):</p>
+      <ul>
+        <li>App opened</li>
+        <li>Currency conversion completed</li>
+        <li>Unit conversion completed</li>
+        <li>Document scan completed</li>
+        <li>Document export completed</li>
+        <li>Date calculation completed</li>
+        <li>General feature usage (e.g., screen opened)</li>
+      </ul>
+      <p><strong>What Firebase Analytics does not collect through Convertica:</strong></p>
+      <ul>
+        <li>OCR text from document scans</li>
+        <li>Document or image content</li>
+        <li>File names of exported documents</li>
+        <li>Free-form text you type in the app</li>
+        <li>Currency amounts, prices, or other values you convert</li>
+      </ul>
+      <p>Analytics events are limited to <strong>non-personal, aggregated usage signals</strong> (such as event names and general categories). We design our analytics to avoid sending sensitive or user-entered content.</p>
+      <p>For more information, see <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google’s Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase documentation</a>.</p>
+
+      <h2>Firebase Crashlytics</h2>
+      <p>Convertica uses <strong>Firebase Crashlytics</strong> to collect crash and error reports when the app fails unexpectedly.</p>
+      <p><strong>Purpose:</strong></p>
+      <ul>
+        <li>Collect crash reports</li>
+        <li>Diagnose errors and bugs</li>
+        <li>Improve app stability and reliability</li>
+      </ul>
+      <p><strong>Examples of information that may be included in crash reports:</strong></p>
+      <ul>
+        <li>Crash logs and stack traces</li>
+        <li>Android OS version</li>
+        <li>Device model (manufacturer and model name)</li>
+        <li>App version and build number</li>
+      </ul>
+      <p><strong>What Crashlytics does not include:</strong></p>
+      <ul>
+        <li>Document content or OCR results from your scans</li>
+        <li>Text you entered in converters or document fields</li>
+        <li>Photos, exports, or file names from your device</li>
+      </ul>
+      <p>Crash reports are used solely to fix technical issues. They are processed by Google under Firebase terms.</p>
+
+      <h2>Data Security</h2>
+      <p>We take reasonable steps to protect information processed through Convertica and the third-party services we use:</p>
+      <ul>
+        <li>Data transmitted to Firebase, AdMob, and other online services is sent over <strong>secure connections</strong> (such as HTTPS/TLS) where supported by those services.</li>
+        <li><strong>Firebase and Google</strong> apply their own industry-standard security practices, access controls, and infrastructure protections as described in their documentation.</li>
+        <li>Most of your scan content, documents, and conversion data remain <strong>on your device</strong> and are not uploaded to SSForge servers.</li>
+      </ul>
+      <p>No method of transmission or storage is 100% secure. If you have concerns about security, contact us at the address below.</p>
+
       <h2>Advertising (Google AdMob)</h2>
       <p>Convertica displays advertisements through <strong>Google AdMob</strong> to support the free version of the app.</p>
+      <p>During <strong>closed testing and development</strong>, the app may show <strong>Google test ads</strong> so that advertising can be verified without live campaigns.</p>
+      <p>After <strong>public release</strong>, Convertica may display <strong>live Google AdMob advertisements</strong> in supported regions, subject to Google’s policies and your device settings.</p>
       <p>AdMob may collect and use information to show and measure ads, which may include:</p>
       <ul>
         <li>Advertising ID (e.g., Google Advertising ID on Android)</li>
@@ -128,6 +201,14 @@
           </thead>
           <tbody>
             <tr>
+              <td><strong>Google Firebase Analytics</strong></td>
+              <td>Usage analytics and feature insights</td>
+            </tr>
+            <tr>
+              <td><strong>Google Firebase Crashlytics</strong></td>
+              <td>Crash and stability reporting</td>
+            </tr>
+            <tr>
               <td><strong>Google AdMob</strong></td>
               <td>Displaying banner advertisements</td>
             </tr>
@@ -147,6 +228,7 @@
         </table>
       </div>
       <p>Each third party processes data under its own privacy policy. We encourage you to review Google’s policies at <a href="https://policies.google.com/privacy" rel="noopener noreferrer">policies.google.com</a>.</p>
+      <p>We may add or update third-party services over time (for example, additional Firebase products such as Remote Config, or new analytics events). When we do, we will update this Privacy Policy and the <strong>“Last updated”</strong> date where appropriate.</p>
       <p>Network requests for exchange rates do not include your personal identity; they request public rate data needed for the currency feature to function.</p>
 
       <h2>User Rights</h2>
@@ -174,7 +256,7 @@
       <p>We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us at <strong><a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></strong> and we will take steps to delete such information where we are able to do so.</p>
 
       <h2>Changes to This Privacy Policy</h2>
-      <p>We may update this Privacy Policy from time to time to reflect changes in the app, legal requirements, or our practices.</p>
+      <p>We may update this Privacy Policy from time to time to reflect changes in the app, legal requirements, third-party services (including Firebase or advertising), or our practices.</p>
       <p>When we make material changes, we will update the <strong>“Last updated”</strong> date at the top of this document. For significant changes, we may also provide notice within the app or through the app store listing where appropriate.</p>
       <p>Your continued use of Convertica after an update means you accept the revised policy.</p>
 
