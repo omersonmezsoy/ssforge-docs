@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gizlilik Politikası — SATOLITO</title>
+  <meta name="description" content="SSForge tarafından yayımlanan SATOLITO Gizlilik Politikası.">
+  <link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Gizlilik Politikası — SATOLITO</h1>
+      <div class="meta">
+        <p><strong>Yürürlük tarihi:</strong> 19 Ekim 2026</p>
+        <p><strong>Uygulama:</strong> SATOLITO (<code>com.satolito.app</code>)</p>
+        <p><strong>Geliştirici:</strong> SSForge</p>
+        <p><strong>İletişim:</strong> <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
+        <p><a href="../en/" lang="en">English version</a></p>
+      </div>
+    </header>
+
+    <main>
+      <h2>1. Kapsam ve özet</h2>
+      <p>Bu Gizlilik Politikası, yerel öncelikli bir kişisel bütçe uygulaması olan SATOLITO'yu kullandığınızda SSForge'un bilgileri nasıl ele aldığını açıklar. SATOLITO kullanıcı hesabı gerektirmez; finansal verileriniz için geliştiriciye ait bir backend veya bulut senkronizasyon hizmeti işletmez.</p>
+      <p>Finansal kayıtlarınız cihazınızda işlenir. SSForge; hesap adlarınızı, işlemlerinizi, bakiyelerinizi, planlarınızı, mutabakatlarınızı, açıklamalarınızı, yedek parolanızı, yedek dosyanızı veya CSV dışa aktarımlarınızı uygulama üzerinden almaz.</p>
+
+      <h2>2. Cihazınızda işlenen bilgiler</h2>
+      <p>SATOLITO, girdiğiniz veya oluşturduğunuz aşağıdaki bilgileri işleyebilir ve saklayabilir:</p>
+      <ul>
+        <li>nakit, banka ve kredi kartı görünen adları ile hesap türleri;</li>
+        <li>açılış bakiyeleri, gelirler, giderler, transferler, kart ödemeleri ve iadeler;</li>
+        <li>tutarlar, işlem tarihleri, kategoriler, gelir kaynakları ve isteğe bağlı açıklamalar;</li>
+        <li>planlar, beklenen gelir ve giderler, düzenli şablonlar ve tamamlanma durumları;</li>
+        <li>mutabakat gözlemleri, açıklamaları ve değiştirilemez düzeltme geçmişi;</li>
+        <li>temel para birimi, dil, görünüm, tanıtım ve diğer uygulama tercihleri.</li>
+      </ul>
+      <p>SATOLITO bu bilgileri yalnızca cihazınızda bütçe takibi, çift taraflı finansal geçmiş, hesap bakiyeleri, planlama, mutabakat, rehberlik ve finansal özet özelliklerini sunmak için kullanır.</p>
+
+      <h2>3. Yerel saklama ve güvenlik</h2>
+      <p>SATOLITO çalışma verilerini uygulamanın Android'e özel korumalı alanındaki bir SQLite veritabanında saklar. Android uygulama sandbox koruması, diğer uygulamaların normal erişimini sınırlar. SQLite veritabanı <strong>bağımsız olarak şifrelenmez</strong>; cihaz düzeyindeki güvenlik, ekran kilidi ve depolama şifrelemesi önemini korur.</p>
+      <p>Uygulama, Android tarafından yönetilen otomatik bulut yedeklemeyi kapatır ve eski yedekleme yolları ile Android 12 ve üzerindeki bulut yedekleme ve cihazdan cihaza aktarım yolları için dışlama kuralları sağlar. Bu platform mekanizmalarını nihai olarak Android ve cihaz üreticileri uygular; bu nedenle hiçbir uygulama belgelenmemiş üreticiye özel tüm aktarım yollarının dışlandığını garanti edemez.</p>
+
+      <h2>4. Kullanıcı kontrollü şifreli yedekleme ve geri yükleme</h2>
+      <p>Açıkça SATOLITO yedeği oluşturduğunuzda uygulama, yerel verilerinizi AES-256-GCM ile korunan bir <code>.satolito</code> dosyasına paketler. Girdiğiniz paroladan Argon2id kullanılarak bir anahtar türetilir. Parola ve türetilen anahtar yalnızca cihazınızda işlenir ve SSForge'a gönderilmez.</p>
+      <p>SSForge unutulan yedekleme parolasını kurtaramaz. Geri yükleme, seçilen yedeğin kimliğini doğrular ve içeriğini denetler. Onayınızdan sonra başarılı bir geri yükleme mevcut SATOLITO durumunun tamamının yerini alır; eski ve yeni kayıtları birleştirmez.</p>
+      <p>Yedeğin nereye kaydedileceğini veya nereden alınacağını Android belge seçicisi üzerinden siz belirlersiniz. Bir bulut ya da üçüncü taraf depolama sağlayıcısı seçerseniz dosyayı oraya yerleştirdikten sonra ilgili sağlayıcının gizlilik ve güvenlik koşulları geçerli olur.</p>
+
+      <h2>5. Şifrelenmemiş CSV dışa aktarımı</h2>
+      <p>SATOLITO, yalnız bir uyarı gösterip onayınızı aldıktan sonra finansal geçmişin okunabilir bir CSV dışa aktarımını oluşturabilir. CSV dosyaları <strong>şifrelenmez</strong>. Dosyayı yalnızca güvendiğiniz bir konumda saklamalı ve paylaşırken dikkatli olmalısınız.</p>
+      <p>Hedefi Android belge seçicisi üzerinden siz belirlersiniz. SSForge dışa aktarılan dosyayı almaz. Seçtiğiniz depolama sağlayıcısı dosyayı kendi koşulları kapsamında işleyebilir veya senkronize edebilir.</p>
+
+      <h2>6. Hesaplar, backend hizmetleri ve üçüncü taraf SDK'lar</h2>
+      <p>SATOLITO şu anda:</p>
+      <ul>
+        <li>kullanıcı hesabı oluşturmaz;</li>
+        <li>geliştiriciye ait backend veya bulut senkronizasyon hizmeti kullanmaz;</li>
+        <li>reklam SDK'sı içermez;</li>
+        <li>kullanım analitiği SDK'sı içermez;</li>
+        <li>çökme raporlama SDK'sı içermez; ve</li>
+        <li>kişisel veya finansal bilgileri satmaz.</li>
+      </ul>
+      <p>Android, Google Play, cihaz üreticiniz ve seçtiğiniz depolama sağlayıcısı, platform veya sağlayıcı hizmeti olarak bilgileri kendi politikaları kapsamında işleyebilir. SATOLITO bu hizmetleri reklam, analitik veya çökme raporlama entegrasyonu olarak uygulamaya gömmez.</p>
+
+      <h2>7. Veri saklama ve silme</h2>
+      <p>Yerel SATOLITO verileri; uygulama depolamasını temizleyene, uygulamayı kaldırana veya bir yedeği geri yükleyerek mevcut durumu değiştirene kadar cihazınızda kalır. SATOLITO denetlenebilir yerel finansal geçmişi korur: düzenlemeler ve iptaller sonuçlanmış kayıtları sessizce değiştirmek yerine düzeltme kayıtları kullanır; arşivlenen hesaplar geçmişlerini korur.</p>
+      <p>Uygulama dışında sakladığınız yedekler ve CSV dosyaları, siz veya seçtiğiniz depolama sağlayıcısı silene kadar yerleştirdiğiniz konumda kalır. SATOLITO uygulama depolamasını temizlemek veya uygulamayı kaldırmak, bu harici dosyaları silmeyebilir.</p>
+      <p>SATOLITO'nun kullanıcı hesabı veya geliştirici tarafından barındırılan finansal veritabanı bulunmadığından SSForge'un silebileceği uzak bir SATOLITO hesabı ya da finansal veri kümesi yoktur. Destek mesajları veya doğrudan SSForge'a gönderdiğiniz diğer bilgiler için bizimle iletişime geçebilirsiniz.</p>
+
+      <h2>8. Destek iletişimleri</h2>
+      <p>SSForge'a e-posta gönderirseniz e-posta adresinizi, mesaj içeriğini ve göndermeyi seçtiğiniz ekleri alırız. Bunları talebinizi yanıtlamak, sorunları incelemek ve geçerli hukuki veya güvenlik yükümlülüklerini yerine getirmek için kullanırız. Destek yazışmaları yalnızca bu amaçlar için makul ölçüde gerekli olduğu sürece saklanır ve SATOLITO'nun yerel finansal veritabanıyla birleştirilmez.</p>
+      <p>Destek mesajında yedek parolası, şifresi çözülmüş yedek, şifrelenmemiş finansal dışa aktarım veya gerekli olmayan başka hassas finansal bilgi göndermeyin.</p>
+
+      <h2>9. Seçimleriniz ve sorumluluklarınız</h2>
+      <ul>
+        <li>Cihazınızı uygun ekran kilidi ve cihaz güvenlik ayarlarıyla koruyun.</li>
+        <li>Güçlü ve benzersiz bir yedek parolası kullanın ve parolayı ayrı, güvenli bir yerde saklayın.</li>
+        <li>Yedek ve CSV dosyalarını kaydettiğiniz depolama sağlayıcısı üzerinden yönetin ve silin.</li>
+        <li>Cihazdaki yerel çalışma verilerini kaldırmak istiyorsanız SATOLITO uygulama depolamasını temizleyin veya uygulamayı kaldırın.</li>
+      </ul>
+
+      <h2>10. Bu politikadaki değişiklikler</h2>
+      <p>SATOLITO'nun özellikleri, veri uygulamaları, hukuki gereksinimler veya üçüncü taraf bileşenleri değişirse bu politikayı güncelleyebiliriz. Yukarıdaki yürürlük tarihini günceller ve uygun olduğunda uygulama veya mağaza listesi üzerinden bildirim yaparız. Veri uygulamalarındaki önemli değişiklikler, ilgili özellik yayımlanmadan önce politikaya yansıtılır.</p>
+
+      <h2>11. İletişim</h2>
+      <p>Gizlilik soruları, destek talepleri veya doğrudan SSForge'a gönderdiğiniz bilgilerle ilgili talepler için:</p>
+      <p><strong>SSForge</strong><br>
+      E-posta: <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
+    </main>
+
+    <footer>
+      <p><em>Bu politika SSForge tarafından yayımlanan SATOLITO (paket adı: <code>com.satolito.app</code>) için geçerlidir.</em></p>
+    </footer>
+  </div>
+</body>
+</html>
