@@ -1,273 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — Convertica</title>
-  <meta name="description" content="Privacy Policy for Convertica by SSForge.">
+  <title>Convertica Gizlilik Politikası / Privacy Policy</title>
+  <meta name="description" content="Convertica gizlilik politikası ve privacy policy by SSForge.">
   <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .wrapper {
+      overflow-wrap: anywhere;
+    }
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+    .language-nav a {
+      display: inline-block;
+      padding: 0.45rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--card);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    section[lang] {
+      scroll-margin-top: 1rem;
+    }
+    .meta code {
+      white-space: normal;
+      word-break: break-word;
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <h1>Privacy Policy — Convertica</h1>
+      <h1>Convertica Gizlilik Politikası / Privacy Policy</h1>
+      <nav class="language-nav" aria-label="Dil / Language">
+        <a href="#turkce" lang="tr">Türkçe</a>
+        <span aria-hidden="true">·</span>
+        <a href="#english" lang="en">English</a>
+      </nav>
       <div class="meta">
-        <p><strong>Last updated:</strong> July 6, 2026</p>
-        <p><strong>App name:</strong> Convertica</p>
-        <p><strong>Developer:</strong> SSForge</p>
-        <p><strong>Contact:</strong> <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
+        <p><strong>Revizyon tarihi / Revision prepared:</strong> 9 Kasım 2026 / November 9, 2026</p>
+        <p><strong>Yürürlük / Effective date:</strong> Bu revizyon, deponun <code>main</code> dalından aşağıdaki mevcut politika URL'sinde yayımlandığında yürürlüğe girer. / This revision takes effect when it is published from the repository's <code>main</code> branch at the existing policy URL.</p>
+        <p><strong>Uygulama / App:</strong> Convertica (<code>com.ssforge.convertica</code>)</p>
+        <p><strong>Geliştirici / Developer:</strong> SSForge</p>
+        <p><strong>İletişim / Contact:</strong> <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
+        <p><strong>Politika URL'si / Policy URL:</strong> <a href="https://omersonmezsoy.github.io/ssforge-docs/privacy-policy/">https://omersonmezsoy.github.io/ssforge-docs/privacy-policy/</a></p>
       </div>
     </header>
 
     <main>
-      <h2>Introduction</h2>
-      <p>This Privacy Policy explains how SSForge (“we,” “us,” or “our”) handles information when you use <strong>Convertica</strong>, a mobile utility app for currency conversion, unit conversion, document scanning and export, date calculations, and camera-based scanning.</p>
-      <p>By using Convertica, you agree to the practices described in this policy. If you do not agree, please do not use the app.</p>
-      <p>This document is written to meet Google Play requirements and to give you a clear, transparent overview of our data practices. It may be adapted for other SSForge apps with app-specific details updated where noted.</p>
+      <section id="turkce" lang="tr" aria-labelledby="turkce-title">
+        <h2 id="turkce-title">Türkçe</h2>
 
-      <h2>Information We Collect</h2>
-      <p>Convertica is designed to work primarily on your device. We do <strong>not</strong> require you to create an account, and we do <strong>not</strong> operate a backend service that stores your documents, photos, or scan content on SSForge servers.</p>
-      <p>Depending on how you use the app, the following types of information may be processed:</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Examples</th>
-              <th>Where it is processed</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Usage analytics</strong></td>
-              <td>Feature usage events (e.g., app opened, conversion completed, scan completed)</td>
-              <td>Google Firebase Analytics (see below)</td>
-            </tr>
-            <tr>
-              <td><strong>Diagnostic data</strong></td>
-              <td>Crash logs, stack traces, device and app version</td>
-              <td>Google Firebase Crashlytics (see below)</td>
-            </tr>
-            <tr>
-              <td><strong>Advertising data</strong></td>
-              <td>Ad impressions, ad identifiers</td>
-              <td>Google AdMob (see below)</td>
-            </tr>
-            <tr>
-              <td><strong>On-device content you create</strong></td>
-              <td>Scanned photos, cropped images, extracted text, exported files</td>
-              <td>Your device only</td>
-            </tr>
-            <tr>
-              <td><strong>Local preferences</strong></td>
-              <td>Language choice, onboarding completion, cached exchange rates</td>
-              <td>Your device only</td>
-            </tr>
-            <tr>
-              <td><strong>Network requests</strong></td>
-              <td>Anonymous requests to public exchange-rate APIs</td>
-              <td>Sent from your device to third-party services</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>We do <strong>not</strong> knowingly collect names, email addresses, phone numbers, or payment information through Convertica unless you contact us directly by email.</p>
-      <p>Convertica uses <strong>Google Firebase</strong> for usage analytics and crash reporting. These services help us understand how features are used and improve stability. They do <strong>not</strong> receive your document content, OCR text, file names, free-form input, or conversion amounts (see the Firebase sections below).</p>
+        <h2>1. Kapsam ve temel yaklaşım</h2>
+        <p>Bu Gizlilik Politikası, SSForge tarafından yayımlanan <strong>Convertica</strong> mobil uygulamasının bilgileri nasıl işlediğini açıklar. Convertica; para birimi ve birim dönüştürme, belge tarama ve düzenleme, tarih ve iş günü hesaplama, geri sayım ve Android ana ekran widget'ları gibi araçlar sunar.</p>
+        <p>Convertica için kullanıcı hesabı oluşturmanız gerekmez. SSForge, kişisel belgelerinizi, fotoğraflarınızı, OCR metinlerinizi, çizimlerinizi veya imzalarınızı saklayan bir Convertica sunucusu işletmez. Bu içerikler, aşağıda açıklanan üçüncü taraf SDK'ların otomatik teknik verilerinden ayrı olarak, cihazınızda işlenir ve SSForge'a ait bir sunucuya yüklenmez.</p>
+        <p>Uygulamayı kullanmanız bu politikada açıklanan işlemleri kabul ettiğiniz anlamına gelir. Kabul etmiyorsanız uygulamayı kullanmayın.</p>
 
-      <h2>Camera Permission</h2>
-      <p>Convertica requests access to your device <strong>camera</strong> only when you choose a scan-related feature, such as:</p>
-      <ul>
-        <li>Scanning a price or unit label (Currency / Unit scan flows)</li>
-        <li>Scanning a document for OCR and export</li>
-      </ul>
-      <p><strong>Important points:</strong></p>
-      <ul>
-        <li>The camera is used <strong>only for scanning and capture</strong> related to these features.</li>
-        <li>Convertica does <strong>not</strong> record audio or access your microphone. The app does not request microphone permission.</li>
-        <li>Images captured for scanning are processed to fulfill the feature you requested (for example, text recognition or conversion). They are not uploaded to SSForge servers.</li>
-      </ul>
-      <p>You can deny camera permission; scan features will not work without it, but other app features remain available.</p>
+        <h2>2. Cihazda işlenen belge ve kullanıcı içeriği</h2>
+        <p>Convertica'da aşağıdaki işlemler cihazınızda gerçekleştirilir:</p>
+        <ul>
+          <li>Kamera ile belge tarama ve Google ML Kit kullanılarak cihaz üzerinde metin tanıma (OCR)</li>
+          <li>İşletim sisteminin galeri veya dosya seçicisi aracılığıyla seçtiğiniz fotoğraf ve dosyaları açma</li>
+          <li>PDF açma, sayfaları yeniden sıralama, döndürme, silme, birleştirme ve dışa aktarma</li>
+          <li>Çizim, işaretleme, metin ekleme ve imza yerleştirme</li>
+          <li>PDF, TXT, DOCX ve desteklenen diğer çıktıları oluşturma</li>
+        </ul>
+        <p>Belge geçmişi, taranan görüntüler, OCR sonuçları, düzenleme verileri ve uygulama içinde kaydedilen dosyalar uygulamanın yerel depolamasında tutulabilir. Dışa aktarılan bir dosyayı seçtiğiniz başka bir konuma kaydederseniz o kopya seçilen konumda kalır.</p>
+        <p><strong>SSForge, belge, fotoğraf, OCR, çizim veya imza içeriğinizi kendi sunucularına yüklemez, saklamaz veya bunlara erişmez.</strong> Bir dosyayı paylaşmayı seçtiğinizde işletim sisteminin paylaşım menüsünü siz başlatırsınız. Bundan sonra seçtiğiniz alıcı uygulama veya hizmet kendi gizlilik koşullarına göre işlem yapabilir.</p>
 
-      <h2>Document Processing</h2>
-      <p>When you use the <strong>Document Converter</strong> feature:</p>
-      <ul>
-        <li>You capture or select an image on your device.</li>
-        <li>You may crop the image before processing.</li>
-        <li>Text recognition (OCR) runs <strong>on your device</strong> using Google ML Kit (on-device text recognition).</li>
-        <li>Extracted text and exported files (PDF, TXT, DOCX, etc.) are stored <strong>locally on your device</strong> unless you choose to share them through your device’s share sheet.</li>
-      </ul>
-      <p><strong>SSForge does not receive, store, or access your documents, photos, or extracted text on our own servers.</strong></p>
-      <p>You are responsible for exported files saved on your device and for any content you share with third parties.</p>
+        <h2>3. İzinler ve cihaz kaynakları</h2>
+        <ul>
+          <li><strong>Kamera:</strong> Yalnız kamera kullanan tarama özelliklerini seçtiğinizde belge, fiyat veya birim yakalamak için istenir. İzni reddederseniz diğer özellikleri kullanmaya devam edebilirsiniz.</li>
+          <li><strong>Fotoğraflar ve dosyalar:</strong> İşletim sisteminin seçicisi üzerinden yalnız sizin seçtiğiniz öğelere erişilir. Seçiciyi iptal etmek içerik oluşturmaz veya yüklemez.</li>
+          <li><strong>Bildirimler:</strong> Geri sayım hatırlatmalarını etkinleştirdiğinizde yerel bildirim göstermek için istenir. Hatırlatma etkinleştirmezseniz bu izin ilgili akışta istenmez; izni reddetmek geri sayımı kaydetmenizi engellemez.</li>
+        </ul>
+        <p>Convertica ses kaydetmez ve mikrofon izni istemez.</p>
 
-      <h2>Firebase Analytics</h2>
-      <p>Convertica uses <strong>Firebase Analytics</strong> to understand how the app is used and to improve performance and features.</p>
-      <p><strong>Purpose:</strong></p>
-      <ul>
-        <li>Analyze app usage patterns</li>
-        <li>Understand which features are used</li>
-        <li>Improve app performance and user experience</li>
-      </ul>
-      <p><strong>Examples of event types we may collect</strong> (not the content of your actions):</p>
-      <ul>
-        <li>App opened</li>
-        <li>Currency conversion completed</li>
-        <li>Unit conversion completed</li>
-        <li>Document scan completed</li>
-        <li>Document export completed</li>
-        <li>Date calculation completed</li>
-        <li>General feature usage (e.g., screen opened)</li>
-      </ul>
-      <p><strong>What Firebase Analytics does not collect through Convertica:</strong></p>
-      <ul>
-        <li>OCR text from document scans</li>
-        <li>Document or image content</li>
-        <li>File names of exported documents</li>
-        <li>Free-form text you type in the app</li>
-        <li>Currency amounts, prices, or other values you convert</li>
-      </ul>
-      <p>Analytics events are limited to <strong>non-personal, aggregated usage signals</strong> (such as event names and general categories). We design our analytics to avoid sending sensitive or user-entered content.</p>
-      <p>For more information, see <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google’s Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase documentation</a>.</p>
+        <h2>4. Yerel özellik verileri</h2>
+        <p>Ayarlar, favoriler, önbelleğe alınmış kur verileri, belge geçmişi, çalışma takvimleri, özel günler, geri sayımlar ve hatırlatma tercihleri cihazınızda saklanabilir. Geri sayım bildirimleri cihaz tarafından yerel olarak zamanlanır. Android widget'ları, seçtiğiniz dönüşüm veya geri sayım bilgilerini ana ekranda göstermek için uygulamanın yerel verilerinden sınırlı bir anlık görüntü kullanabilir.</p>
+        <p>Bu yerel özellikler için SSForge hesabı veya SSForge sunucusu gerekmez. Cihazın yedekleme, dosya sistemi ve bildirim davranışları işletim sistemi ve cihaz üreticisi ayarlarına bağlı olabilir.</p>
 
-      <h2>Firebase Crashlytics</h2>
-      <p>Convertica uses <strong>Firebase Crashlytics</strong> to collect crash and error reports when the app fails unexpectedly.</p>
-      <p><strong>Purpose:</strong></p>
-      <ul>
-        <li>Collect crash reports</li>
-        <li>Diagnose errors and bugs</li>
-        <li>Improve app stability and reliability</li>
-      </ul>
-      <p><strong>Examples of information that may be included in crash reports:</strong></p>
-      <ul>
-        <li>Crash logs and stack traces</li>
-        <li>Android OS version</li>
-        <li>Device model (manufacturer and model name)</li>
-        <li>App version and build number</li>
-      </ul>
-      <p><strong>What Crashlytics does not include:</strong></p>
-      <ul>
-        <li>Document content or OCR results from your scans</li>
-        <li>Text you entered in converters or document fields</li>
-        <li>Photos, exports, or file names from your device</li>
-      </ul>
-      <p>Crash reports are used solely to fix technical issues. They are processed by Google under Firebase terms.</p>
+        <h2>5. Kur, kıymetli maden ve resmî tatil verileri</h2>
+        <p>Convertica, gerekli olduğunda üçüncü taraf veri hizmetlerine doğrudan cihazınızdan istek gönderir:</p>
+        <ul>
+          <li><strong>Frankfurter API:</strong> Para birimleri ile altın ve gümüş gibi desteklenen kıymetli madenler için güncel, tarihsel ve dönemsel referans oranları. İstekler temel/hedef varlık kodlarını ve tarih veya tarih aralığını içerebilir. Yazdığınız dönüşüm tutarı gönderilmez; hesaplama cihazda yapılır. Gram değerleri troy ons oranlarından cihazda türetilir.</li>
+          <li><strong>Nager.Date Community API v4:</strong> Seçtiğiniz ülke ve yıl için ülke genelindeki resmî tatil verileri. İstekler ülke kodunu ve yılı içerebilir. Kişisel takviminiz, özel gün adlarınız, geri sayım başlıklarınız ve hatırlatma metinleriniz gönderilmez.</li>
+        </ul>
+        <p>Bu hizmetlere yapılan standart internet istekleri, ağın çalışması için IP adresi ve standart bağlantı bilgilerini hizmet sağlayıcılarına gösterebilir. Frankfurter'ın yayımlanmış açıklamasına göre genel API kişisel veri, IP adresi veya istek URL'si kaydetmez ve Cloudflare'dan yalnız toplu trafik istatistikleri alır. Nager.Date verileri bilgilendirme amaçlıdır; tatillerin hukuki kesinliği için resmî makamları kontrol etmelisiniz.</p>
 
-      <h2>Data Security</h2>
-      <p>We take reasonable steps to protect information processed through Convertica and the third-party services we use:</p>
-      <ul>
-        <li>Data transmitted to Firebase, AdMob, and other online services is sent over <strong>secure connections</strong> (such as HTTPS/TLS) where supported by those services.</li>
-        <li><strong>Firebase and Google</strong> apply their own industry-standard security practices, access controls, and infrastructure protections as described in their documentation.</li>
-        <li>Most of your scan content, documents, and conversion data remain <strong>on your device</strong> and are not uploaded to SSForge servers.</li>
-      </ul>
-      <p>No method of transmission or storage is 100% secure. If you have concerns about security, contact us at the address below.</p>
+        <h2>6. Firebase Analytics</h2>
+        <p>Convertica'nın production sürümü, özelliklerin kullanımını ve uygulamanın iyileştirilebileceği alanları anlamak için <strong>Google Firebase Analytics</strong> kullanır. Özel olaylar; ekran veya özellik açılması, bir dönüşümün tamamlanması, tarama/dışa aktarma sonucu ve genel işlem kategorisi gibi teknik kullanım sinyallerini içerebilir.</p>
+        <p>Convertica'nın özel Analytics olayları; belge veya görüntü içeriğini, OCR metnini, dosya adını, çizim veya imzayı, geri sayım başlığını, serbest metni, fiyatı ya da dönüşüm tutarını göndermeyecek şekilde tasarlanmıştır. Bununla birlikte Firebase SDK'ları, yapılandırmaya ve Google'ın güncel belgelerine bağlı olarak uygulama instance kimliği, reklam kimliği, yaklaşık konum (örneğin maskelenmiş IP'den türetilen bölge), cihaz/işletim sistemi bilgisi ve uygulama etkileşimleri gibi SDK kaynaklı verileri işleyebilir.</p>
 
-      <h2>Advertising (Google AdMob)</h2>
-      <p>Convertica displays advertisements through <strong>Google AdMob</strong> to support the free version of the app.</p>
-      <p>During <strong>closed testing and development</strong>, the app may show <strong>Google test ads</strong> so that advertising can be verified without live campaigns.</p>
-      <p>After <strong>public release</strong>, Convertica may display <strong>live Google AdMob advertisements</strong> in supported regions, subject to Google’s policies and your device settings.</p>
-      <p>AdMob may collect and use information to show and measure ads, which may include:</p>
-      <ul>
-        <li>Advertising ID (e.g., Google Advertising ID on Android)</li>
-        <li>Device information (device type, OS version)</li>
-        <li>Ad interaction data (impressions, clicks)</li>
-        <li>Approximate location derived from IP address (as permitted by your device settings)</li>
-      </ul>
-      <p>You can limit ad personalization through your device settings (for example, “Opt out of Ads Personalization” on Android).</p>
-      <p>For more information, see Google’s advertising policies and privacy documentation:</p>
-      <ul>
-        <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
-        <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a></li>
-      </ul>
+        <h2>7. Firebase Crashlytics</h2>
+        <p>Convertica'nın production sürümü, çökmeleri ve teknik hataları tanılamak için <strong>Google Firebase Crashlytics</strong> kullanır. Crashlytics otomatik olarak stack trace, ilgili uygulama durumu, cihaz ve işletim sistemi üst verileri, uygulama sürümü ve Crashlytics kurulum UUID'si gibi tanılama verilerini işleyebilir. Analytics etkin olduğunda, çökmeden önceki uygulama etkileşimlerini açıklayan breadcrumb bilgileri de rapora eklenebilir.</p>
+        <p>Convertica, Crashlytics'e belge/OCR/imza içeriğini, kullanıcı dosya adını, serbest metni veya dönüşüm tutarını kasıtlı olarak eklemez. Teknik raporların içeriği kullanılan SDK sürümüne ve hata bağlamına göre değişebilir.</p>
 
-      <h2>Data Storage</h2>
-      <p>Most Convertica data stays <strong>on your device</strong>, including:</p>
-      <ul>
-        <li>Cached currency exchange rates</li>
-        <li>App settings and preferences</li>
-        <li>Document scan history and exported files you create</li>
-        <li>Onboarding and language preferences</li>
-      </ul>
-      <p>Data may be removed when you uninstall the app or clear app storage through your device settings, subject to how your operating system handles app data.</p>
-      <p>SSForge does <strong>not</strong> maintain a central cloud database of your personal scan content or conversion history.</p>
+        <h2>8. Google AdMob</h2>
+        <p>Convertica'nın ücretsiz production sürümü banner reklamları göstermek için <strong>Google AdMob</strong> kullanır. Google Mobile Ads SDK'nın resmî açıklamasına göre SDK; reklam, analiz ve sahtekârlığı önleme amaçlarıyla aşağıdaki verileri otomatik olarak toplayabilir ve paylaşabilir:</p>
+        <ul>
+          <li>IP adresi ve bundan tahmin edilebilen yaklaşık/genel konum</li>
+          <li>Uygulama açılışı, dokunmalar, reklam gösterimleri ve görüntülemeler gibi uygulama ve reklam etkileşimleri</li>
+          <li>Başlangıç süresi, takılma oranı, enerji kullanımı gibi tanılama ve performans bilgileri</li>
+          <li>Android reklam kimliği, app set ID ve uygun olduğunda cihazdaki oturum açmış hesaplarla ilişkili diğer cihaz/hesap tanımlayıcıları</li>
+        </ul>
+        <p>Bu işlemler Google'ın şartları, kullanıcının bölgesi, cihaz ayarları, izin/tercih seçenekleri ve reklam yapılandırmasına bağlıdır. Android ayarlarından reklam kimliğinizi sıfırlayabilir veya silebilir ve mevcut reklam gizliliği seçeneklerini yönetebilirsiniz.</p>
 
-      <h2>Third-Party Services</h2>
-      <p>Convertica relies on the following third-party services:</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Service</th>
-              <th>Purpose</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Google Firebase Analytics</strong></td>
-              <td>Usage analytics and feature insights</td>
-            </tr>
-            <tr>
-              <td><strong>Google Firebase Crashlytics</strong></td>
-              <td>Crash and stability reporting</td>
-            </tr>
-            <tr>
-              <td><strong>Google AdMob</strong></td>
-              <td>Displaying banner advertisements</td>
-            </tr>
-            <tr>
-              <td><strong>Google ML Kit (on-device)</strong></td>
-              <td>Text recognition for scan features</td>
-            </tr>
-            <tr>
-              <td><strong>Frankfurter API</strong></td>
-              <td>Public exchange-rate data for the currency converter</td>
-            </tr>
-            <tr>
-              <td><strong>Google Play services</strong></td>
-              <td>App distribution and platform services (Android)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Each third party processes data under its own privacy policy. We encourage you to review Google’s policies at <a href="https://policies.google.com/privacy" rel="noopener noreferrer">policies.google.com</a>.</p>
-      <p>We may add or update third-party services over time (for example, additional Firebase products such as Remote Config, or new analytics events). When we do, we will update this Privacy Policy and the <strong>“Last updated”</strong> date where appropriate.</p>
-      <p>Network requests for exchange rates do not include your personal identity; they request public rate data needed for the currency feature to function.</p>
+        <h2>9. Saklama ve silme</h2>
+        <p>Yerel Convertica verileri, siz silene, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar cihazda kalabilir. İşletim sisteminin yedekleme davranışı bu işlemlerin sonucunu etkileyebilir. Uygulama dışına aktardığınız veya başka bir hizmetle paylaştığınız kopyalar ayrıca silinmelidir.</p>
+        <p>Firebase ve AdMob gibi üçüncü taraf hizmetlerin saklama ve silme süreleri kendi yapılandırmalarına, şartlarına ve politikalarına tabidir. SSForge'a destek e-postası gönderirseniz mesajınız ve e-posta adresiniz talebi yanıtlamak, güvenlik veya yasal yükümlülükleri yerine getirmek için gerekli olduğu sürece e-posta sağlayıcısında tutulabilir. Silme veya gizlilik talebi için aşağıdaki adresten iletişime geçebilirsiniz.</p>
 
-      <h2>User Rights</h2>
-      <p>Depending on your location, you may have rights regarding your personal data, including under the <strong>GDPR</strong> (European Economic Area, UK, and similar jurisdictions) and other applicable laws.</p>
-      <p>These rights may include:</p>
-      <ul>
-        <li><strong>Access</strong> — request information about data processed about you where applicable</li>
-        <li><strong>Rectification</strong> — request correction of inaccurate data we hold about you (primarily relevant to data you send us directly, such as support emails)</li>
-        <li><strong>Erasure</strong> — request deletion of personal data we control</li>
-        <li><strong>Restriction or objection</strong> — object to or restrict certain processing where applicable</li>
-        <li><strong>Data portability</strong> — receive data you provided in a portable format where applicable</li>
-        <li><strong>Withdraw consent</strong> — where processing is based on consent, withdraw it at any time</li>
-      </ul>
-      <p>Because most Convertica processing occurs on your device, you can also:</p>
-      <ul>
-        <li>Reset your advertising ID or limit ad tracking in device settings</li>
-        <li>Clear app data or uninstall the app to remove locally stored information</li>
-        <li>Manage Google ad settings related to AdMob where applicable</li>
-      </ul>
-      <p>To exercise your rights or ask questions, contact us at <strong><a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></strong>. We will respond within a reasonable time as required by applicable law.</p>
-      <p>If you are in the EEA/UK, you may also lodge a complaint with your local data protection authority.</p>
+        <h2>10. Güvenlik ve üçüncü taraflar</h2>
+        <p>Firebase ve Google Mobile Ads SDK'ları, resmî belgelerine göre topladıkları verileri aktarım sırasında HTTPS/TLS ile şifreler. Diğer çevrimiçi hizmetler de destekledikleri güvenli bağlantıları kullanır. Hiçbir aktarım veya depolama yöntemi yüzde yüz güvenli değildir.</p>
+        <p>Kullandığımız başlıca üçüncü taraflar ve belgeleri:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Gizlilik Politikası</a></li>
+          <li><a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener noreferrer">Firebase — Google Play veri açıklaması</a></li>
+          <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads SDK — Google Play veri açıklaması</a></li>
+          <li><a href="https://developers.google.com/ml-kit/vision/text-recognition/v2/android" rel="noopener noreferrer">Google ML Kit metin tanıma</a></li>
+          <li><a href="https://frankfurter.dev/" rel="noopener noreferrer">Frankfurter API</a></li>
+          <li><a href="https://github.com/nager/Nager.Date" rel="noopener noreferrer">Nager.Date</a></li>
+        </ul>
+        <p>Her hizmet kendi şart ve gizlilik uygulamalarından sorumludur.</p>
 
-      <h2>Children's Privacy</h2>
-      <p>Convertica is a general-purpose utility app and is <strong>not directed at children under 13</strong> (or the minimum age required in your country).</p>
-      <p>We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us at <strong><a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></strong> and we will take steps to delete such information where we are able to do so.</p>
+        <h2>11. Haklarınız ve tercihleriniz</h2>
+        <p>Bulunduğunuz yere göre erişim, düzeltme, silme, kısıtlama, itiraz veya veri taşınabilirliği gibi haklara sahip olabilirsiniz. Convertica verilerinin büyük bölümü cihazınızda olduğundan yerel verileri uygulama içinden, Android uygulama ayarlarından veya uygulamayı kaldırarak yönetebilirsiniz. Reklam tercihlerini Android ve Google reklam ayarlarından yönetebilirsiniz.</p>
+        <p>SSForge'ın kontrolündeki veriler veya destek yazışmaları hakkında talepte bulunmak için <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a> adresine yazın. Uygulanabilir mevzuat uyarınca makul süre içinde yanıt veririz.</p>
 
-      <h2>Changes to This Privacy Policy</h2>
-      <p>We may update this Privacy Policy from time to time to reflect changes in the app, legal requirements, third-party services (including Firebase or advertising), or our practices.</p>
-      <p>When we make material changes, we will update the <strong>“Last updated”</strong> date at the top of this document. For significant changes, we may also provide notice within the app or through the app store listing where appropriate.</p>
-      <p>Your continued use of Convertica after an update means you accept the revised policy.</p>
+        <h2>12. Çocukların gizliliği</h2>
+        <p>Convertica genel amaçlı bir yardımcı uygulamadır ve 13 yaşın altındaki çocuklara (veya ülkenizde geçerli daha yüksek asgari yaşa) yönelik değildir. Bir çocuğun bize kişisel bilgi gönderdiğini düşünüyorsanız silebilmemiz için bizimle iletişime geçin.</p>
 
-      <h2>Contact</h2>
-      <p>If you have questions, concerns, or requests regarding this Privacy Policy or Convertica’s data practices, please contact:</p>
-      <p><strong>SSForge</strong><br>
-      Email: <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
+        <h2>13. Politika değişiklikleri</h2>
+        <p>Uygulama özellikleri, yasal gereklilikler veya üçüncü taraf hizmetler değiştiğinde bu politikayı güncelleyebiliriz. Yeni revizyon, bu sayfada yayımlandığında yürürlüğe girer; önemli değişiklikler için uygun olduğunda uygulama veya mağaza sayfasında ayrıca bildirim sağlanabilir.</p>
+
+        <h2>14. İletişim</h2>
+        <p><strong>SSForge</strong><br>
+        E-posta: <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
+      </section>
+
+      <hr>
+
+      <section id="english" lang="en" aria-labelledby="english-title">
+        <h2 id="english-title">English</h2>
+
+        <h2>1. Scope and basic approach</h2>
+        <p>This Privacy Policy explains how the <strong>Convertica</strong> mobile application published by SSForge handles information. Convertica provides tools including currency and unit conversion, document scanning and editing, date and business-day calculations, countdowns, and Android home-screen widgets.</p>
+        <p>Convertica does not require a user account. SSForge does not operate a Convertica server that stores your personal documents, photos, OCR text, drawings, or signatures. Separate from automatic technical data processed by the third-party SDKs described below, this content is processed on your device and is not uploaded to a server owned by SSForge.</p>
+        <p>By using the app, you agree to the processing described in this policy. If you do not agree, please do not use the app.</p>
+
+        <h2>2. Documents and user content processed on device</h2>
+        <p>The following operations are performed on your device in Convertica:</p>
+        <ul>
+          <li>Scanning documents with the camera and on-device text recognition (OCR) using Google ML Kit</li>
+          <li>Opening photos and files that you select through the operating system's gallery or file picker</li>
+          <li>Opening PDFs, reordering, rotating, deleting and merging pages, and exporting documents</li>
+          <li>Drawing, markup, adding text, and placing a signature</li>
+          <li>Creating PDF, TXT, DOCX, and other supported outputs</li>
+        </ul>
+        <p>Document history, scanned images, OCR results, editing data, and files saved inside the app may be kept in the app's local storage. If you export a file to another location, that copy remains in the location you selected.</p>
+        <p><strong>SSForge does not upload, store, or access your document, photo, OCR, drawing, or signature content on its own servers.</strong> When you choose to share a file, you initiate the operating system share sheet. The recipient app or service you select may then process the file under its own privacy terms.</p>
+
+        <h2>3. Permissions and device resources</h2>
+        <ul>
+          <li><strong>Camera:</strong> Requested only when you choose a camera-based scan feature to capture a document, price, or unit. If you deny permission, other features remain available.</li>
+          <li><strong>Photos and files:</strong> Only items you select through the operating system picker are accessed. Cancelling the picker does not create or upload content.</li>
+          <li><strong>Notifications:</strong> Requested when you enable countdown reminders so the device can show local notifications. The relevant flow does not request this permission if you do not enable reminders; denying it does not prevent you from saving a countdown.</li>
+        </ul>
+        <p>Convertica does not record audio and does not request microphone permission.</p>
+
+        <h2>4. Local feature data</h2>
+        <p>Settings, favorites, cached rate data, document history, work calendars, custom days, countdowns, and reminder preferences may be stored on your device. Countdown notifications are scheduled locally by the device. Android widgets may use a limited snapshot of local app data to show the conversion or countdown information you selected on the home screen.</p>
+        <p>These local features do not require an SSForge account or an SSForge server. Device backup, file-system, and notification behavior may depend on your operating system and device-manufacturer settings.</p>
+
+        <h2>5. Exchange-rate, precious-metal, and public-holiday data</h2>
+        <p>When needed, Convertica sends requests directly from your device to third-party data services:</p>
+        <ul>
+          <li><strong>Frankfurter API:</strong> Current, historical, and period reference rates for currencies and supported precious metals such as gold and silver. Requests may include base/quote asset codes and a date or date range. The amount you enter is not sent; conversion is calculated on device. Gram values are derived on device from troy-ounce rates.</li>
+          <li><strong>Nager.Date Community API v4:</strong> Country-wide public-holiday data for the country and year you select. Requests may include the country code and year. Your personal calendar, custom-day names, countdown titles, and reminder text are not sent.</li>
+        </ul>
+        <p>Standard internet requests to these services may expose an IP address and standard connection information to the service providers as necessary for networking. Frankfurter's published statement says its public API does not collect or log personal data, IP addresses, or request URLs and receives only aggregate traffic statistics from Cloudflare. Nager.Date data is informational; consult official authorities when legal certainty about a holiday is required.</p>
+
+        <h2>6. Firebase Analytics</h2>
+        <p>The production version of Convertica uses <strong>Google Firebase Analytics</strong> to understand feature usage and where the app can be improved. Custom events may include technical usage signals such as a screen or feature being opened, a conversion being completed, a scan/export result, and a general action category.</p>
+        <p>Convertica's custom Analytics events are designed not to send document or image content, OCR text, file names, drawings or signatures, countdown titles, free-form text, prices, or conversion amounts. Depending on configuration and Google's current documentation, Firebase SDKs may nevertheless process SDK-derived data such as an app-instance identifier, advertising identifier, approximate location (for example a region derived from a masked IP address), device/operating-system information, and app interactions.</p>
+
+        <h2>7. Firebase Crashlytics</h2>
+        <p>The production version of Convertica uses <strong>Google Firebase Crashlytics</strong> to diagnose crashes and technical errors. Crashlytics may automatically process diagnostic data such as stack traces, relevant app state, device and operating-system metadata, app version, and a Crashlytics installation UUID. When Analytics is enabled, breadcrumb information describing app interactions before a crash may also be attached to a report.</p>
+        <p>Convertica does not intentionally attach document/OCR/signature content, user file names, free-form text, or conversion amounts to Crashlytics. The contents of a technical report may vary with the SDK version and error context.</p>
+
+        <h2>8. Google AdMob</h2>
+        <p>The free production version of Convertica uses <strong>Google AdMob</strong> to show banner advertisements. According to the Google Mobile Ads SDK's official disclosure, the SDK may automatically collect and share the following data for advertising, analytics, and fraud-prevention purposes:</p>
+        <ul>
+          <li>IP address and the approximate/general location that may be estimated from it</li>
+          <li>App and ad interactions such as app launches, taps, ad impressions, and views</li>
+          <li>Diagnostic and performance information such as launch time, hang rate, and energy usage</li>
+          <li>Android advertising ID, app set ID, and, where applicable, other device/account identifiers related to signed-in accounts on the device</li>
+        </ul>
+        <p>This processing depends on Google's terms, the user's region, device settings, permission/choice mechanisms, and advertising configuration. You can reset or delete the advertising ID and manage available advertising privacy options in Android settings.</p>
+
+        <h2>9. Retention and deletion</h2>
+        <p>Local Convertica data may remain on the device until you delete it, clear the app's data, or uninstall the app. Operating-system backup behavior may affect the outcome. Copies exported outside the app or shared with another service must be deleted separately.</p>
+        <p>Retention and deletion periods for third-party services such as Firebase and AdMob are governed by their configuration, terms, and policies. If you email SSForge for support, your message and email address may be retained by the email provider for as long as needed to respond to the request and meet security or legal obligations. You may use the contact below for deletion or privacy requests.</p>
+
+        <h2>10. Security and third parties</h2>
+        <p>According to their official documentation, Firebase and the Google Mobile Ads SDK encrypt data they collect in transit using HTTPS/TLS. Other online services use secure connections where supported. No transmission or storage method is completely secure.</p>
+        <p>Our principal third-party services and documentation are:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
+          <li><a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener noreferrer">Firebase — Google Play data disclosure</a></li>
+          <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads SDK — Google Play data disclosure</a></li>
+          <li><a href="https://developers.google.com/ml-kit/vision/text-recognition/v2/android" rel="noopener noreferrer">Google ML Kit text recognition</a></li>
+          <li><a href="https://frankfurter.dev/" rel="noopener noreferrer">Frankfurter API</a></li>
+          <li><a href="https://github.com/nager/Nager.Date" rel="noopener noreferrer">Nager.Date</a></li>
+        </ul>
+        <p>Each service is responsible for its own terms and privacy practices.</p>
+
+        <h2>11. Your rights and choices</h2>
+        <p>Depending on where you live, you may have rights such as access, correction, deletion, restriction, objection, or data portability. Because most Convertica data is stored on your device, you can manage local data in the app, through Android app settings, or by uninstalling the app. You can manage advertising choices in Android and Google ad settings.</p>
+        <p>For requests about data under SSForge's control or support correspondence, email <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a>. We will respond within a reasonable period as required by applicable law.</p>
+
+        <h2>12. Children's privacy</h2>
+        <p>Convertica is a general-purpose utility app and is not directed to children under 13 (or a higher minimum age applicable in your country). If you believe a child has sent us personal information, contact us so that we can take appropriate deletion steps.</p>
+
+        <h2>13. Changes to this policy</h2>
+        <p>We may update this policy when app features, legal requirements, or third-party services change. A new revision becomes effective when it is published on this page; where appropriate, material changes may also be announced in the app or store listing.</p>
+
+        <h2>14. Contact</h2>
+        <p><strong>SSForge</strong><br>
+        Email: <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a></p>
+      </section>
     </main>
 
     <footer>
-      <p><em>This policy applies to Convertica (package name: <code>com.ssforge.convertica</code>) published by SSForge.</em></p>
+      <p><em>Bu politika yalnız SSForge tarafından yayımlanan Convertica (<code>com.ssforge.convertica</code>) için geçerlidir. / This policy applies only to Convertica (<code>com.ssforge.convertica</code>) published by SSForge.</em></p>
     </footer>
   </div>
 </body>
