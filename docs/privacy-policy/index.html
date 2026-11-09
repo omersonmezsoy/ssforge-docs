@@ -45,7 +45,7 @@
         <a href="#english" lang="en">English</a>
       </nav>
       <div class="meta">
-        <p><strong>Revizyon tarihi / Revision prepared:</strong> 9 Kasım 2026 / November 9, 2026</p>
+        <p><strong>Revizyon tarihi / Revision prepared:</strong> 10 Kasım 2026 / November 10, 2026</p>
         <p><strong>Yürürlük / Effective date:</strong> Bu revizyon, deponun <code>main</code> dalından aşağıdaki mevcut politika URL'sinde yayımlandığında yürürlüğe girer. / This revision takes effect when it is published from the repository's <code>main</code> branch at the existing policy URL.</p>
         <p><strong>Uygulama / App:</strong> Convertica (<code>com.ssforge.convertica</code>)</p>
         <p><strong>Geliştirici / Developer:</strong> SSForge</p>
@@ -112,6 +112,9 @@
           <li>Android reklam kimliği, app set ID ve uygun olduğunda cihazdaki oturum açmış hesaplarla ilişkili diğer cihaz/hesap tanımlayıcıları</li>
         </ul>
         <p>Bu işlemler Google'ın şartları, kullanıcının bölgesi, cihaz ayarları, izin/tercih seçenekleri ve reklam yapılandırmasına bağlıdır. Android ayarlarından reklam kimliğinizi sıfırlayabilir veya silebilir ve mevcut reklam gizliliği seçeneklerini yönetebilirsiniz.</p>
+        <p><strong>Reklam gizliliği tercihleri (Google UMP).</strong> Convertica, reklam isteği yapılmadan önce bölgenize ve Google AdMob'da yapılandırılmış gizlilik mesajlarına göre reklam tercihlerini almak için Google User Messaging Platform'u (UMP) kullanır. Uygulama her soğuk başlangıçta UMP'den güncel tercih durumunu ister ve gerekiyorsa formu gösterir. Avrupa Ekonomik Alanı (EEA), Birleşik Krallık ve İsviçre'de bu form “Onay ver” (Consent), “Onay verme” (Do not consent) veya “Seçenekleri yönet” (Manage options) seçeneklerini sunabilir. ABD'nin desteklenen eyaletlerinde “Kişisel bilgilerimi satma veya paylaşma” (Do Not Sell or Share) tercihi sunulabilir. Gösterilen seçenekler ve metinler bölgeye, dile ve Google'ın mesaj yapılandırmasına bağlıdır.</p>
+        <p>Kullanıcının tercihi, bölgesi ve Google'ın uygun reklam sunumuna göre kişiselleştirilmiş, kişiselleştirilmemiş veya sınırlı reklam gösterilebilir. Onay vermemek her durumda tamamen reklamsız kullanım garantisi değildir. Convertica yalnız UMP'nin <code>canRequestAds</code> sonucu reklam isteğine izin verdiğinde reklam ister; UMP izin vermezse reklam gösterilmez. Tercih kontrolü başarısız olur ve reklam isteğine izin veren önceki geçerli bir karar bulunmazsa uygulama temel işlevlerini reklamsız sürdürür.</p>
+        <p>Google bir gizlilik seçenekleri girişini gerekli gördüğünde kullanıcı, <strong>Ayarlar → Gizlilik tercihleri</strong> üzerinden formu yeniden açıp tercihini daha sonra değiştirebilir. Convertica'nın Consent Mode yapılandırmasında reklam sinyalleri açıktır; Analytics consent sinyalleri kapalıdır. UMP reklam tercihleri Firebase Analytics consent veya veri toplama durumunu yönetmez. Firebase Analytics ve Firebase Crashlytics davranışları yukarıdaki ayrı bölümlerde açıklanır.</p>
 
         <h2>9. Saklama ve silme</h2>
         <p>Yerel Convertica verileri, siz silene, uygulama verilerini temizleyene veya uygulamayı kaldırana kadar cihazda kalabilir. İşletim sisteminin yedekleme davranışı bu işlemlerin sonucunu etkileyebilir. Uygulama dışına aktardığınız veya başka bir hizmetle paylaştığınız kopyalar ayrıca silinmelidir.</p>
@@ -124,6 +127,9 @@
           <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Gizlilik Politikası</a></li>
           <li><a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener noreferrer">Firebase — Google Play veri açıklaması</a></li>
           <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads SDK — Google Play veri açıklaması</a></li>
+          <li><a href="https://developers.google.com/admob/android/privacy" rel="noopener noreferrer">Google UMP SDK ve gizlilik mesajları</a></li>
+          <li><a href="https://developers.google.com/admob/android/privacy/us-iab-support" rel="noopener noreferrer">Google UMP — ABD eyaletleri gizlilik mesajları</a></li>
+          <li><a href="https://support.google.com/admob/answer/10105530" rel="noopener noreferrer">Google AdMob sınırlı reklamlar</a></li>
           <li><a href="https://developers.google.com/ml-kit/vision/text-recognition/v2/android" rel="noopener noreferrer">Google ML Kit metin tanıma</a></li>
           <li><a href="https://frankfurter.dev/" rel="noopener noreferrer">Frankfurter API</a></li>
           <li><a href="https://github.com/nager/Nager.Date" rel="noopener noreferrer">Nager.Date</a></li>
@@ -131,7 +137,7 @@
         <p>Her hizmet kendi şart ve gizlilik uygulamalarından sorumludur.</p>
 
         <h2>11. Haklarınız ve tercihleriniz</h2>
-        <p>Bulunduğunuz yere göre erişim, düzeltme, silme, kısıtlama, itiraz veya veri taşınabilirliği gibi haklara sahip olabilirsiniz. Convertica verilerinin büyük bölümü cihazınızda olduğundan yerel verileri uygulama içinden, Android uygulama ayarlarından veya uygulamayı kaldırarak yönetebilirsiniz. Reklam tercihlerini Android ve Google reklam ayarlarından yönetebilirsiniz.</p>
+        <p>Bulunduğunuz yere göre erişim, düzeltme, silme, kısıtlama, itiraz veya veri taşınabilirliği gibi haklara sahip olabilirsiniz. Convertica verilerinin büyük bölümü cihazınızda olduğundan yerel verileri uygulama içinden, Android uygulama ayarlarından veya uygulamayı kaldırarak yönetebilirsiniz. Reklam tercihlerini Android ve Google reklam ayarlarından; Google'ın gerekli gördüğü bölgelerde ise uygulamadaki <strong>Ayarlar → Gizlilik tercihleri</strong> girişinden yeniden açarak yönetebilir ve değiştirebilirsiniz.</p>
         <p>SSForge'ın kontrolündeki veriler veya destek yazışmaları hakkında talepte bulunmak için <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a> adresine yazın. Uygulanabilir mevzuat uyarınca makul süre içinde yanıt veririz.</p>
 
         <h2>12. Çocukların gizliliği</h2>
@@ -204,6 +210,9 @@
           <li>Android advertising ID, app set ID, and, where applicable, other device/account identifiers related to signed-in accounts on the device</li>
         </ul>
         <p>This processing depends on Google's terms, the user's region, device settings, permission/choice mechanisms, and advertising configuration. You can reset or delete the advertising ID and manage available advertising privacy options in Android settings.</p>
+        <p><strong>Advertising privacy choices (Google UMP).</strong> Before making an ad request, Convertica uses Google's User Messaging Platform (UMP) to obtain advertising privacy choices based on your region and the privacy messages configured in Google AdMob. On every cold start, the app requests an updated consent status from UMP and displays a form when required. In the European Economic Area (EEA), the United Kingdom, and Switzerland, the form may offer “Consent,” “Do not consent,” or “Manage options.” In supported U.S. states, it may offer a “Do Not Sell or Share” choice. The exact choices and wording depend on region, language, and Google's message configuration.</p>
+        <p>Depending on the user's choice, region, and Google's eligible ad serving, personalized, non-personalized, or limited ads may be shown. Choosing not to consent does not guarantee an entirely ad-free experience in every case. Convertica requests an ad only when UMP's <code>canRequestAds</code> result permits ad requests; if UMP does not permit them, no ad is shown. If the consent check fails and there is no previous valid decision that permits ad requests, the app continues to provide its core features without ads.</p>
+        <p>When Google requires a privacy-options entry point, the user can reopen the form through <strong>Settings → Privacy choices</strong> and change the choice later. In Convertica's Consent Mode configuration, advertising signals are enabled and Analytics consent signals are disabled. UMP advertising choices do not manage Firebase Analytics consent or collection state. Firebase Analytics and Firebase Crashlytics behavior is described separately above.</p>
 
         <h2>9. Retention and deletion</h2>
         <p>Local Convertica data may remain on the device until you delete it, clear the app's data, or uninstall the app. Operating-system backup behavior may affect the outcome. Copies exported outside the app or shared with another service must be deleted separately.</p>
@@ -216,6 +225,9 @@
           <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
           <li><a href="https://firebase.google.com/docs/android/play-data-disclosure" rel="noopener noreferrer">Firebase — Google Play data disclosure</a></li>
           <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads SDK — Google Play data disclosure</a></li>
+          <li><a href="https://developers.google.com/admob/android/privacy" rel="noopener noreferrer">Google UMP SDK and privacy messaging</a></li>
+          <li><a href="https://developers.google.com/admob/android/privacy/us-iab-support" rel="noopener noreferrer">Google UMP — U.S. states privacy messaging</a></li>
+          <li><a href="https://support.google.com/admob/answer/10105530" rel="noopener noreferrer">Google AdMob limited ads</a></li>
           <li><a href="https://developers.google.com/ml-kit/vision/text-recognition/v2/android" rel="noopener noreferrer">Google ML Kit text recognition</a></li>
           <li><a href="https://frankfurter.dev/" rel="noopener noreferrer">Frankfurter API</a></li>
           <li><a href="https://github.com/nager/Nager.Date" rel="noopener noreferrer">Nager.Date</a></li>
@@ -223,7 +235,7 @@
         <p>Each service is responsible for its own terms and privacy practices.</p>
 
         <h2>11. Your rights and choices</h2>
-        <p>Depending on where you live, you may have rights such as access, correction, deletion, restriction, objection, or data portability. Because most Convertica data is stored on your device, you can manage local data in the app, through Android app settings, or by uninstalling the app. You can manage advertising choices in Android and Google ad settings.</p>
+        <p>Depending on where you live, you may have rights such as access, correction, deletion, restriction, objection, or data portability. Because most Convertica data is stored on your device, you can manage local data in the app, through Android app settings, or by uninstalling the app. You can manage advertising choices in Android and Google ad settings and, where Google requires it, reopen and change them through <strong>Settings → Privacy choices</strong> in the app.</p>
         <p>For requests about data under SSForge's control or support correspondence, email <a href="mailto:omerss.apps@gmail.com">omerss.apps@gmail.com</a>. We will respond within a reasonable period as required by applicable law.</p>
 
         <h2>12. Children's privacy</h2>
